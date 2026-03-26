@@ -1,21 +1,19 @@
 # Brain — Claude Code Plugin for Obsidian Second Brain
 
-Obsidian Second Brain 지식 관리를 위한 Claude Code plugin. 13개 스킬 제공.
+Obsidian Second Brain 지식 관리를 위한 Claude Code plugin. 11개 스킬 제공.
 
 ## Skills
 
 | Skill | 설명 |
 |-------|------|
+| `brain:add` | vault에 자료 아카이빙 — URL/제목 자동 감지 → paper (arxiv) / repo (GitHub) / book (교보문고) |
+| `brain:grok` | 체계적 학습 — 대화형 학습 (바이너리 서치) 또는 심층 분석 (학습 자료 생성) 모드 선택 |
 | `brain:search` | vault에서 관련 노트 후보를 recall 우선으로 수집 (Grep + bge-m3 벡터) |
-| `brain:connect` | 문서 간 누락된 연결을 발견하고 단방향 위키링크 추가 |
 | `brain:brainstorm` | 아이디어 기반 지식 큐레이션 + 브레인스토밍 문서 생성 |
+| `brain:connect` | 문서 간 누락된 연결을 발견하고 단방향 위키링크 추가 |
 | `brain:thread` | 관심 주제의 흐름(thread) 발견 및 관리 |
 | `brain:graph` | vault 연결 구조에 대한 그래프 쿼리 (neighbors, hubs, bridges, health 등) |
 | `brain:goodmorning` | 모닝 브리핑 데일리 노트 생성 (태스크, 코드 변경, 읽을거리) |
-| `brain:paper` | 논문 관리 — `add`: arxiv 아카이빙 + 요약, `study`: 심층 분석 + 학습 자료 |
-| `brain:repo-add` | GitHub 레포를 vault에 아카이빙 + 구조화된 요약 생성 |
-| `brain:book-add` | 교보문고에서 책 정보 검색 → 독서 목록 노트 생성 |
-| `brain:grok` | 바이너리 서치 방식의 대화형 학습 튜터 |
 | `brain:inbox-review` | Inbox 큐레이션 → PARA 폴더로 이관 |
 | `brain:project` | 프로젝트 관리 — `list`: 목록 조회, `open`: 폴더 탐색 + 핵심 요약 |
 | `brain:text-to-pdf` | Markdown → PDF 변환 (한글, 코드블록, 테이블 지원) |
@@ -34,7 +32,6 @@ claude plugin install brain
 Plugin이 설치된 디렉토리에서 config 파일을 생성:
 
 ```bash
-# 설치 경로 확인 후 해당 디렉토리에서
 cp config.md.template config.md
 ```
 
@@ -58,30 +55,29 @@ cp config.md.template config.md
 
 ```
 .claude-plugin/
-├── plugin.json          # Plugin 메타데이터
-└── marketplace.json     # Marketplace 등록 정보
+├── plugin.json
+└── marketplace.json
 skills/
+├── add/
+│   ├── SKILL.md         # paper/repo/book 자동 감지
+│   └── scripts/         # PDF 다운로드/이미지 추출
+├── grok/
+│   └── SKILL.md         # 대화형 학습 / 심층 분석 모드 선택
 ├── search/
 │   ├── SKILL.md
 │   └── scripts/         # 벡터 검색 (brain_search.py)
-├── paper/
-│   ├── SKILL.md         # add + study 서브커맨드
-│   └── scripts/         # PDF 다운로드/이미지 추출
 ├── project/
-│   └── SKILL.md         # list + open 서브커맨드
-├── text-to-pdf/
-│   ├── SKILL.md
-│   └── scripts/         # Markdown → PDF 변환
+│   └── SKILL.md         # list / open 서브커맨드
 ├── graph/
 │   ├── SKILL.md
 │   └── references/      # 그래프 쿼리 템플릿 + vault 설정
-├── connect/SKILL.md
+├── text-to-pdf/
+│   ├── SKILL.md
+│   └── scripts/         # Markdown → PDF 변환
 ├── brainstorm/SKILL.md
+├── connect/SKILL.md
 ├── thread/SKILL.md
 ├── goodmorning/SKILL.md
-├── repo-add/SKILL.md
-├── book-add/SKILL.md
-├── grok/SKILL.md
 └── inbox-review/SKILL.md
 config.md                # 개인 경로 설정 (gitignored)
 config.md.template       # 설정 템플릿
