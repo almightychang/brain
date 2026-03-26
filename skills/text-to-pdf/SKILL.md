@@ -18,7 +18,7 @@ Markdown 파일을 깔끔한 A4 PDF로 변환한다.
 ## 실행 절차
 
 ```bash
-uv run ${CLAUDE_PLUGIN_ROOT}/scripts/text-to-pdf/convert.py "{input_path}"
+uv run ${CLAUDE_SKILL_DIR}/scripts/convert.py "{input_path}"
 ```
 
 `uv run`이 인라인 스크립트 메타데이터를 읽어 의존성을 자동으로 해결한다. 별도 설치 불필요.

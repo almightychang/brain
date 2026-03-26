@@ -60,7 +60,7 @@ lateral_topics: ["간접적으로 관련될 수 있는 주제1", "주제2"]
 Step 1에서 추출한 keywords + lateral_topics를 쉼표로 합쳐 `brain:search`를 실행한다.
 
 ```bash
-cd ${CLAUDE_PLUGIN_ROOT}/scripts/search && uv run python brain_search.py "<keywords, lateral_topics 합산>"
+cd ${CLAUDE_PLUGIN_ROOT}/skills/search/scripts && uv run python brain_search.py "<keywords, lateral_topics 합산>"
 ```
 
 이 스크립트는 **Grep (키워드 매칭) + 벡터 검색 (bge-m3 의미 유사도)**을 병렬 실행하고 합산 결과를 JSON으로 반환한다. 벡터 검색은 키워드가 없는 관련 노트도 발견한다 (검증 결과: Grep 대비 +66% relevant 추가).

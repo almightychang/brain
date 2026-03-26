@@ -25,7 +25,7 @@ allowed-tools: Bash, Read, Grep, Glob
 ### Step 1: 검색 실행
 
 ```bash
-cd ${CLAUDE_PLUGIN_ROOT}/scripts/search && uv run python brain_search.py "<주제>"
+cd ${CLAUDE_SKILL_DIR}/scripts && uv run python brain_search.py "<주제>"
 ```
 
 **캐시 동작:**
