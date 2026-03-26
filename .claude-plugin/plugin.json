@@ -1,0 +1,9 @@
+{
+  "name": "brain",
+  "version": "1.0.0",
+  "description": "Obsidian Second Brain 지식 관리 스킬 모음",
+  "author": {
+    "name": "Sam"
+  },
+  "skills": "./skills/"
+}

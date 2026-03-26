@@ -1,0 +1,8 @@
+# Brain Plugin Configuration
+
+## 경로 설정
+
+| 키 | 값 |
+|----|-----|
+| VAULT | `/path/to/your/obsidian/vault` |
+| WORKSPACES | `/path/to/your/workspaces` |
