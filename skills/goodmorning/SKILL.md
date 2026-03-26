@@ -1,5 +1,4 @@
 ---
-name: goodmorning
 description: "오늘의 모닝 브리핑 데일리 노트를 생성한다."
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep, Agent, WebFetch, WebSearch
 ---

@@ -1,5 +1,4 @@
 ---
-name: book-add
 description: "책을 옵시디언 독서 목록에 추가한다. 교보문고에서 책 정보와 표지를 검색하여 구조화된 노트를 생성."
 allowed-tools: Bash, Write, Edit, Read, Glob, Grep, WebFetch, WebSearch
 ---

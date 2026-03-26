@@ -1,5 +1,4 @@
 ---
-name: paper-study
 description: "논문을 심층 분석하고 학습 자료를 생성한다. PDF를 읽고 난이도 평가, 방법론 분석, Q&A, 코드 데모까지 체계적 학습 환경을 구축."
 allowed-tools: Bash, Write, Edit, Read, Glob, Grep, Agent
 ---

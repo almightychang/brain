@@ -1,5 +1,4 @@
 ---
-name: connect
 description: "Obsidian Second Brain에서 파편화된 문서들 사이의 연결을 점진적으로 발견하고, 단방향 위키링크를 추가한다."
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep, Agent
 ---

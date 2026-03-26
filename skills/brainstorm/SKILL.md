@@ -1,5 +1,4 @@
 ---
-name: brainstorm
 description: "아이디어를 제시하면 Obsidian Second Brain에서 관련 문서를 큐레이션하고, 브레인스토밍 준비 문서를 생성한다."
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep, Agent
 ---

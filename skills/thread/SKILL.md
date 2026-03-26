@@ -1,5 +1,4 @@
 ---
-name: thread
 description: "관심 주제의 흐름(thread)을 발견하고 관리한다. 기존 thread와 최근 추가된 리소스(논문, 레포 등)를 스캔하여 연결 지점을 추천."
 allowed-tools: Bash, Write, Edit, Read, Glob, Grep, Agent, WebFetch, WebSearch
 ---

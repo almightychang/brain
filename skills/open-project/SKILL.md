@@ -1,5 +1,4 @@
 ---
-name: open-project
 description: "Obsidian 프로젝트 폴더를 빠르게 탐색하고 핵심 내용을 요약한다."
 ---
 

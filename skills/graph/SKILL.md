@@ -1,5 +1,4 @@
 ---
-name: graph
 description: "Obsidian vault의 연결 구조에 대해 그래프 쿼리를 실행한다. neighbors, path, hubs, bridges, orphans, vault-stats, suggest-links, health 등 지원."
 allowed-tools: Bash, Read, Write, Glob, Grep
 ---

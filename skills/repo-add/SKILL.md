@@ -1,5 +1,4 @@
 ---
-name: repo-add
 description: "GitHub 레포를 옵시디언 Second Brain에 아카이빙하고 구조화된 요약을 생성한다. GitHub API로 메타데이터 수집, README 추출, 서브에이전트 기반 요약까지 자동화."
 allowed-tools: Bash, Write, Edit, Read, Glob, Grep, Agent, WebFetch
 ---
@@ -131,7 +130,6 @@ README가 500줄을 초과하면:
 
 ---
 type: repo
-name: "${OWNER}/${REPO}"
 url: {{repo URL}}
 stars: {{stargazersCount}}
 forks: {{forkCount}}

@@ -1,5 +1,4 @@
 ---
-name: text-to-pdf
 description: "Markdown 파일을 깔끔한 PDF로 변환한다. 한글, 코드블록, 테이블 지원."
 ---
 

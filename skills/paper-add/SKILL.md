@@ -1,5 +1,4 @@
 ---
-name: paper-add
 description: "arxiv 논문을 옵시디언 Second Brain에 아카이빙하고 구조화된 요약을 생성한다. 논문 PDF 다운로드, 이미지 추출, 서브에이전트 기반 텍스트 추출/요약까지 자동화."
 allowed-tools: Bash, Write, Edit, Read, Glob, Grep, Agent, WebFetch
 ---

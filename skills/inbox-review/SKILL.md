@@ -1,5 +1,4 @@
 ---
-name: inbox-review
 description: "Obsidian Inbox를 검토하고, 항목을 큐레이션하여 적절한 PARA 폴더로 이관한다."
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep, Agent, Skill
 ---

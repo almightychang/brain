@@ -1,5 +1,4 @@
 ---
-name: list-project
 description: "Obsidian Second Brain의 프로젝트 목록을 한눈에 보여준다."
 ---
 

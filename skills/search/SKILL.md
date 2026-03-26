@@ -1,5 +1,4 @@
 ---
-name: search
 description: "Obsidian Second Brain에서 관련 노트 후보를 recall 우선으로 수집한다. brainstorm, connect, thread 등에서 소비."
 allowed-tools: Bash, Read, Grep, Glob
 ---
