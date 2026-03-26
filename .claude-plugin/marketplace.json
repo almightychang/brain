@@ -1,0 +1,11 @@
+{
+  "name": "brain",
+  "description": "Obsidian Second Brain 지식 관리 스킬 모음",
+  "plugins": [
+    {
+      "name": "brain",
+      "description": "Obsidian Second Brain 지식 관리 스킬 15개",
+      "path": "."
+    }
+  ]
+}
